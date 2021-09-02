@@ -1,0 +1,72 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;    
+}
+
+.d-flex{
+    display: flex;
+    justify-content: center;
+}
+
+.d-flex-span{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.d-flex-button{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 40px;
+}
+
+h1{
+    font: size 36px;
+    text-transform: uppercase;    
+}
+
+span{
+    display: flex;
+    justify-content: center;
+    border-bottom: 3px solid #000;
+    width: 40px;
+    margin: 5px;
+    padding-bottom: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+button{
+    margin: 5px;
+    width: 45px;
+    padding: 10px 0;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+
+    color: whitesmoke;
+    background-color: cadetblue;
+    border-radius: 25%;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: teal;
+}
+
+.check, .check:hover{
+    background-color: green;  
+    border: 2px solid black;
+    cursor: inherit;
+}
+
+.wrong, .wrong:hover{
+    background-color: red;  
+    border: 2px solid black;
+    cursor: inherit;
+}
