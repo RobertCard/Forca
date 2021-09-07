@@ -85,8 +85,7 @@ function choice(letter) {
 
     if (hits === word.length) {
         let msg = document.createElement("p");
-        let t1 = document.createTextNode("Você Venceu!");
-        msg.appendChild(t1);
+        document.getElementById("forca").src = "img/win.png"
 
         let button = document.createElement("button");
         let t2 = document.createTextNode("Jogar Novamente")
