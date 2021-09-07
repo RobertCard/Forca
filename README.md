@@ -2,7 +2,7 @@
 
 # Jogo da Forca - Robert Cardoso
 
->Link: 
+>Link: https://robertcard.github.io/Forca/
 
 ## Proposta
 Site/jogo simples com intuito de treinar técnicas de Design e principalmente habilidades com JavaScript
