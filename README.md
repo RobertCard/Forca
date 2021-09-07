@@ -19,7 +19,9 @@ Site/jogo simples com intuito de treinar técnicas de Design e principalmente ha
 
 -Projeto simples e rápido
 
-##Créditos
+## Créditos
+
+Design da Forca feito no Canva: https://www.canva.com/
 
 O projeto foi seguindo algumas instruções do canal: https://www.youtube.com/channel/UCIGJds5klBtXvKk7XQPk0zQ
 Porém, muito do seu conteúdo final foi modificado, tornando o produto final o mais autoral possível.
