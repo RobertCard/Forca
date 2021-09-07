@@ -22,14 +22,14 @@ for (position = 0; position < word.length; position++){
 }
 
 let alfabeto = "abcdefghijklmnopqrstuvwxyz";
-let letter = alfabeto.split("");
+let letters = alfabeto.split("");
 
 for (position = 0; position < letters.length; position++){
     let button = document.createElement("button");
     let letter = document.createTextNode(letters[position]);   
 
     button.appendChild(letter);
-    button.setAttribute('onClick', 'choice(\''+letters[position]+'\')');
+    button.setAttribute('onclick', 'choice(\''+letters[position]+'\')');
     button.setAttribute('id', letters[position]);
 
     let div = document.getElementById("letters");
@@ -47,9 +47,9 @@ function choice(letter) {
 
             span.appendChild(l);
 
-            let button = document.getElementById(word);
-            button.setAttribute('class', 'hits');
-            button.removeAttribute('onClick');
+            let button = document.getElementById(letter);
+            button.setAttribute('class', 'check');
+            button.removeAttribute('onclick');
 
             hits++;
             right = true;
@@ -58,9 +58,45 @@ function choice(letter) {
 
     if(right === false){
         img++;
-        document.getElementById("forca").src = "img/forca"+img+"png";
+        document.getElementById("forca").src = "img/forca"+img+".png";
         
         var button = document.getElementById(letter);
-        
+        button.setAttribute('class', 'wrong');
+        button.removeAttribute('onclick');
+
+        chances--;        
+    }
+
+    if (chances === 0) {
+        let msg = document.createElement("p");
+        document.getElementById("forca").src = "img/go.png"
+
+        let button = document.createElement("button");
+        let t2 = document.createTextNode("Jogar Novamente")
+
+        button.appendChild(t2);
+        button.setAttribute('class', 'new-bt');
+        button.setAttribute('onclick', 'window.location.reload()');
+
+        let div = document.getElementById("new");
+        div.appendChild(msg);
+        div.appendChild(button)
+    }
+
+    if (hits === word.length) {
+        let msg = document.createElement("p");
+        let t1 = document.createTextNode("Você Venceu!");
+        msg.appendChild(t1);
+
+        let button = document.createElement("button");
+        let t2 = document.createTextNode("Jogar Novamente")
+
+        button.appendChild(t2);
+        button.setAttribute('class', 'new-bt');
+        button.setAttribute('onclick', 'window.location.reload()');
+
+        let div = document.getElementById("new");
+        div.appendChild(msg);
+        div.appendChild(button)
     }
 }
