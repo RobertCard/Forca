@@ -5,31 +5,10 @@ body{
     width: 100%;     
 }
 
-.d-flex{
-    display: flex;
-    justify-content: center;
-}
-
-.d-flex-span{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-end;
-}
-
-.d-flex-button{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 40px;
-}
-
 main{
     font-size: 50px;
     margin-top: 10px;
-    padding: 0;
+    padding: 0;    
     font-family: 'Lobster', 'Dancing Script', cursive;       
     -webkit-text-fill-color: white;
     -webkit-text-stroke-color: black;
@@ -70,9 +49,8 @@ button:hover{
 button.new-bt {
     width: auto;
     padding: 10px;   
-    position: absolute; 
-    transform: translateX(-170%);   
-    border-radius: 0%; 
+         
+    border-radius: 5%; 
     background-color: teal;
 }
 
@@ -88,3 +66,28 @@ button.new-bt {
     cursor: inherit;
 }
 
+.d-flex{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.d-flex-button{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 40px;
+}
+
+#forca{
+    width: 25%;
+}
+
+@media only screen and (max-width: 600px) {
+    #forca{
+        width: 75%;
+    }
+}

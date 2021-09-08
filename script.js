@@ -80,10 +80,14 @@ function choice(letter) {
 
         let div = document.getElementById("new");
         div.appendChild(msg);
-        div.appendChild(button)
+        div.appendChild(button);
+
+        
+
     }
 
     if (hits === word.length) {
+
         let msg = document.createElement("p");
         document.getElementById("forca").src = "img/win.png"
 
@@ -96,6 +100,9 @@ function choice(letter) {
 
         let div = document.getElementById("new");
         div.appendChild(msg);
-        div.appendChild(button)
+        div.appendChild(button);
+
+        
+
     }
 }
