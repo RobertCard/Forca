@@ -14,6 +14,7 @@ let img = 0;
 let position;
 
 for (position = 0; position < word.length; position++){
+    
     let span = document.createElement("span");
     span.setAttribute('id', position);
 
@@ -25,6 +26,7 @@ let alfabeto = "abcdefghijklmnopqrstuvwxyz";
 let letters = alfabeto.split("");
 
 for (position = 0; position < letters.length; position++){
+
     let button = document.createElement("button");
     let letter = document.createTextNode(letters[position]);   
 
@@ -41,7 +43,9 @@ function choice(letter) {
     let right = false;
 
     for (position = 0; position < word.length; position++){
+
         if (letter === word[position]){
+
             let span = document.getElementById(position);
             let l = document.createTextNode(letter);
 
@@ -57,10 +61,11 @@ function choice(letter) {
     }
 
     if(right === false){
+
         img++;
         document.getElementById("forca").src = "img/forca"+img+".png";
         
-        var button = document.getElementById(letter);
+        let button = document.getElementById(letter);
         button.setAttribute('class', 'wrong');
         button.removeAttribute('onclick');
 
@@ -68,6 +73,7 @@ function choice(letter) {
     }
 
     if (chances === 0) {
+
         let msg = document.createElement("p");
         document.getElementById("forca").src = "img/go.png"
 
@@ -81,8 +87,6 @@ function choice(letter) {
         let div = document.getElementById("new");
         div.appendChild(msg);
         div.appendChild(button);
-
-        
 
     }
 
@@ -101,8 +105,6 @@ function choice(letter) {
         let div = document.getElementById("new");
         div.appendChild(msg);
         div.appendChild(button);
-
-        
 
     }
 }
